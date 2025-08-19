@@ -1,4 +1,5 @@
 BASIC PROJECT CTK47C - MÔ PHỎNG BÀI TOÁN ĐỒNG BỘ HÓA CỦA HỆ ĐIỀU HÀNH
+
 Authors:
   2312805_Trần Ngọc Như Ý
   2312806_Nguyễn Kim Yến
