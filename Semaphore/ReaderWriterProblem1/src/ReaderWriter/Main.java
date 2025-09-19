@@ -38,32 +38,28 @@ public class Main
 {
 	public static void main(String[] args) throws InterruptedException
 	{
-		//create a lock
+
+		long start = System.nanoTime();
+		Thread[] listReader = new Thread[5];
+		Thread[] listWriter = new Thread[5];
 		ReadWriteLock lock = new ReadWriteLock();
-		
-		Thread reader1 = new Thread(new Reader(lock));
-		Thread writer1 = new Thread(new Writer(lock));
-		Thread writer2 = new Thread(new Writer(lock));
-		Thread writer3 = new Thread(new Writer(lock));
-		Thread writer4 = new Thread(new Writer(lock));
-		
-		Thread reader2 = new Thread(new Reader(lock));
-		Thread reader3 = new Thread(new Reader(lock));
-		Thread reader4 = new Thread(new Reader(lock));
-		Thread reader5 = new Thread(new Reader(lock));
-		Thread writer5 = new Thread(new Writer(lock));
-		
+		for(int i = 0; i < 5; i++)
+		{
+			listReader[i] = new Thread(new Reader(lock));
+			listWriter[i] = new Thread(new Writer(lock));
+		}
 		//let threads start to run
-		reader1.start();
-		writer1.start();
-		writer2.start();
-		writer3.start();
-		writer4.start();
-		
-		reader2.start();
-		reader3.start();
-		reader4.start();
-		reader5.start();
-		writer5.start();
+		for(int i = 0; i < 5; i++)
+		{
+			listReader[i].start();
+			listWriter[i].start();
+		}
+		for(int i = 0; i < 5; i++)
+		{
+			listReader[i].join();
+			listWriter[i].join();
+		}
+		long end = System.nanoTime()-start;
+		System.out.println( "Took  "+ end + " nano seconds");
 	}
 }
