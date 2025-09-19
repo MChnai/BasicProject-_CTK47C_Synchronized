@@ -1,0 +1,346 @@
+Result:
+*Monitor:
+- Dining Phhilosophers: 15571400 nano seconds
+- Reader Writer: 3588451200 nano seconds
+- Producer Consumer: 1098216100 nano seconds
+*Semapnhore:
+- Dining Phhilosophers: 448691100 nano seconds
+- Reader Writer: 38935400 nano seconds
+- Producer Consumer:  4463230900 nano seconds\
+
+===========================================MONITOR=================================================================
+DINING PHILOSOPHERS:
+Philosopher 1 is Thinking
+Philosopher 4 is Thinking
+Philosopher 2 is Thinking
+Philosopher 3 is Thinking
+Philosopher 1 takes Chopstick
+Philosopher 3 takes Chopstick
+Philosopher 0 is Thinking
+Philosopher 1 tis Eating
+Philosopher 3 tis Eating
+Philosopher 1 releases Chopstick
+Philosopher 0 takes Chopstick
+Philosopher 0 tis Eating
+Philosopher 3 releases Chopstick
+Philosopher 2 takes Chopstick
+Philosopher 2 tis Eating
+Philosopher 0 releases Chopstick
+Philosopher 4 takes Chopstick
+Philosopher 4 tis Eating
+Philosopher 2 releases Chopstick
+Philosopher 4 releases Chopstick
+5 phylosophers took  14832500 nano seconds
+
+READER WRITER:
+READER Thread-0 is reading. (Readers: 0)
+READER Thread-8 is reading. (Readers: 1)
+READER Thread-6 is reading. (Readers: 2)
+READER Thread-4 is reading. (Readers: 3)
+READER Thread-2 is reading. (Readers: 4)
+READER Thread-4 has finished reading. (Readers: 4)
+READER Thread-6 has finished reading. (Readers: 3)
+READER Thread-2 has finished reading. (Readers: 2)
+READER Thread-8 has finished reading. (Readers: 1)
+READER Thread-0 has finished reading. (Readers: 0)
+WRITER Thread-9 is writing.
+WRITER Thread-9 has finished writing.
+WRITER Thread-1 is writing.
+WRITER Thread-1 has finished writing.
+READER Thread-0 is reading. (Readers: 0)
+READER Thread-8 is reading. (Readers: 1)
+READER Thread-2 is reading. (Readers: 2)
+READER Thread-4 is reading. (Readers: 3)
+READER Thread-6 is reading. (Readers: 4)
+READER Thread-6 has finished reading. (Readers: 4)
+READER Thread-4 has finished reading. (Readers: 3)
+READER Thread-2 has finished reading. (Readers: 2)
+READER Thread-8 has finished reading. (Readers: 1)
+READER Thread-0 has finished reading. (Readers: 0)
+WRITER Thread-9 is writing.
+WRITER Thread-9 has finished writing.
+WRITER Thread-1 is writing.
+WRITER Thread-1 has finished writing.
+READER Thread-2 is reading. (Readers: 0)
+READER Thread-8 is reading. (Readers: 1)
+READER Thread-0 is reading. (Readers: 2)
+READER Thread-6 is reading. (Readers: 3)
+READER Thread-4 is reading. (Readers: 4)
+READER Thread-4 has finished reading. (Readers: 4)
+READER Thread-2 has finished reading. (Readers: 3)
+READER Thread-6 has finished reading. (Readers: 2)
+READER Thread-8 has finished reading. (Readers: 1)
+READER Thread-0 has finished reading. (Readers: 0)
+WRITER Thread-9 is writing.
+WRITER Thread-9 has finished writing.
+WRITER Thread-1 is writing.
+WRITER Thread-1 has finished writing.
+READER Thread-0 is reading. (Readers: 0)
+READER Thread-2 is reading. (Readers: 1)
+READER Thread-4 is reading. (Readers: 2)
+READER Thread-8 is reading. (Readers: 3)
+READER Thread-6 is reading. (Readers: 4)
+READER Thread-8 has finished reading. (Readers: 4)
+READER Thread-4 has finished reading. (Readers: 3)
+READER Thread-6 has finished reading. (Readers: 2)
+READER Thread-0 has finished reading. (Readers: 1)
+READER Thread-2 has finished reading. (Readers: 0)
+WRITER Thread-9 is writing.
+WRITER Thread-9 has finished writing.
+WRITER Thread-7 is writing.
+WRITER Thread-7 has finished writing.
+READER Thread-0 is reading. (Readers: 0)
+READER Thread-8 is reading. (Readers: 1)
+READER Thread-4 is reading. (Readers: 2)
+READER Thread-2 is reading. (Readers: 3)
+READER Thread-6 is reading. (Readers: 4)
+READER Thread-6 has finished reading. (Readers: 4)
+READER Thread-0 has finished reading. (Readers: 3)
+READER Thread-8 has finished reading. (Readers: 2)
+READER Thread-2 has finished reading. (Readers: 1)
+READER Thread-4 has finished reading. (Readers: 0)
+WRITER Thread-9 is writing.
+WRITER Thread-9 has finished writing.
+WRITER Thread-7 is writing.
+WRITER Thread-7 has finished writing.
+WRITER Thread-5 is writing.
+WRITER Thread-5 has finished writing.
+WRITER Thread-3 is writing.
+WRITER Thread-3 has finished writing.
+WRITER Thread-1 is writing.
+WRITER Thread-1 has finished writing.
+WRITER Thread-5 is writing.
+WRITER Thread-5 has finished writing.
+WRITER Thread-3 is writing.
+WRITER Thread-3 has finished writing.
+WRITER Thread-7 is writing.
+WRITER Thread-7 has finished writing.
+WRITER Thread-5 is writing.
+WRITER Thread-5 has finished writing.
+WRITER Thread-1 is writing.
+WRITER Thread-1 has finished writing.
+WRITER Thread-7 is writing.
+WRITER Thread-7 has finished writing.
+WRITER Thread-5 is writing.
+WRITER Thread-5 has finished writing.
+WRITER Thread-3 is writing.
+WRITER Thread-3 has finished writing.
+WRITER Thread-7 is writing.
+WRITER Thread-7 has finished writing.
+WRITER Thread-5 is writing.
+WRITER Thread-5 has finished writing.
+WRITER Thread-3 is writing.
+WRITER Thread-3 has finished writing.
+WRITER Thread-3 is writing.
+WRITER Thread-3 has finished writing.
+Took  3481317600 nano seconds
+
+PRODUCER CONSUMER:
+Consumer consumes 0
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Consumer consumes 10
+Producer produces 10
+Took  1091329100 nano seconds
+
+===========================================SEMAPHORE=================================================================
+DINING PHILOSOPHERS:
+5 philosophers get to work.
+1 phylosopher: thinking
+3 phylosopher: thinking
+4 phylosopher: thinking
+2 phylosopher: thinking
+0 phylosopher: thinking
+4 philosopher: eating
+4 phylosopher: thinking
+2 philosopher: eating
+2 phylosopher: thinking
+1 philosopher: eating
+1 phylosopher: thinking
+3 philosopher: eating
+3 phylosopher: thinking
+0 philosopher: eating
+0 phylosopher: thinking
+4 philosopher: eating
+2 philosopher: eating
+4 phylosopher: thinking
+2 phylosopher: thinking
+1 philosopher: eating
+1 phylosopher: thinking
+0 philosopher: eating
+0 phylosopher: thinking
+3 philosopher: eating
+3 phylosopher: thinking
+2 philosopher: eating
+4 philosopher: eating
+2 phylosopher: thinking
+4 phylosopher: thinking
+3 philosopher: eating
+1 philosopher: eating
+1 phylosopher: thinking
+0 philosopher: eating
+3 phylosopher: thinking
+0 phylosopher: thinking
+3 philosopher: eating
+0 philosopher: eating
+1 philosopher: eating
+4 philosopher: eating
+2 philosopher: eating
+5 phylosophers took  442573800 nano seconds
+
+READER WRITER:
+Thread 0 is reading
+Thread 0 has finished reading
+Thread 0 is writing
+Thread 0 has finished writing
+Thread 0 is writing
+Thread 0 has finished writing
+Thread 0 is reading
+Thread 0 has finished reading
+Thread 0 is writing
+Thread 0 has finished writing
+Thread 0 is reading
+Thread 0 is reading
+Thread 0 has finished reading
+Thread 0 has finished reading
+Thread 0 is writing
+Thread 0 has finished writing
+Thread 0 is reading
+Thread 0 has finished reading
+Thread 0 is writing
+Thread 0 has finished writing
+Thread 1 is reading
+Thread 1 has finished reading
+Thread 1 is writing
+Thread 1 has finished writing
+Thread 1 is writing
+Thread 1 has finished writing
+Thread 1 is reading
+Thread 1 has finished reading
+Thread 1 is writing
+Thread 1 has finished writing
+Thread 1 is reading
+Thread 1 is reading
+Thread 1 has finished reading
+Thread 1 has finished reading
+Thread 1 is writing
+Thread 1 has finished writing
+Thread 1 is reading
+Thread 1 has finished reading
+Thread 1 is writing
+Thread 1 has finished writing
+Thread 2 is reading
+Thread 2 has finished reading
+Thread 2 is writing
+Thread 2 has finished writing
+Thread 2 is writing
+Thread 2 has finished writing
+Thread 2 is reading
+Thread 2 has finished reading
+Thread 2 is writing
+Thread 2 has finished writing
+Thread 2 is reading
+Thread 2 is reading
+Thread 2 has finished reading
+Thread 2 has finished reading
+Thread 2 is writing
+Thread 2 has finished writing
+Thread 2 is reading
+Thread 2 has finished reading
+Thread 2 is writing
+Thread 2 has finished writing
+Thread 3 is reading
+Thread 3 has finished reading
+Thread 3 is writing
+Thread 3 has finished writing
+Thread 3 is writing
+Thread 3 has finished writing
+Thread 3 is reading
+Thread 3 has finished reading
+Thread 3 is writing
+Thread 3 has finished writing
+Thread 3 is reading
+Thread 3 is reading
+Thread 3 has finished reading
+Thread 3 has finished reading
+Thread 3 is writing
+Thread 3 has finished writing
+Thread 3 is reading
+Thread 3 has finished reading
+Thread 3 is writing
+Thread 3 has finished writing
+Thread 4 is reading
+Thread 4 has finished reading
+Thread 4 is writing
+Thread 4 has finished writing
+Thread 4 is writing
+Thread 4 has finished writing
+Thread 4 is reading
+Thread 4 has finished reading
+Thread 4 is writing
+Thread 4 has finished writing
+Thread 4 is reading
+Thread 4 is reading
+Thread 4 has finished reading
+Thread 4 has finished reading
+Thread 4 is writing
+Thread 4 has finished writing
+Thread 4 is reading
+Thread 4 has finished reading
+Thread 4 is writing
+Thread 4 has finished writing
+Took  5001237200 nano seconds
+
+PRODUCER CONSUMER:
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Producer produces: 10
+Consumer consumes: 10
+Took  9441000 nano seconds
