@@ -26,15 +26,29 @@
 */
 package Philosophers;
 
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main 
 {
 public static void main(String[] args){
-		
-        Chopstick CH = new Chopstick();
-            new Philosopher(CH).start();
-            new Philosopher(CH).start();
-            new Philosopher(CH).start();
-            new Philosopher(CH).start();
+	long start = System.nanoTime();
+	Chopstick CH = new Chopstick();
+	List<Philosopher> list = new ArrayList<>();
+	for(int i = 0; i < 5; i++)
+		list.add(new Philosopher(CH));
+	for(Philosopher p : list)
+		p.start();
+	try
+	{
+		for(Philosopher p : list)
+			p.join();
+	}catch(InterruptedException e) {
+        Thread.currentThread().interrupt();
+    }
+
+
+    long end = System.nanoTime()-start;
+	System.out.println( "5 phylosophers took  "+ end + " nano seconds");
 }
 }
