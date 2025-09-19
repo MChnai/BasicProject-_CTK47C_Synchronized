@@ -32,6 +32,7 @@ public class Main
 {
 	public static void main(String[] args)
 	{
+		long start = System.nanoTime();
 		Thread[] philosophers;
 		Semaphore[] chopstickValue;
 		int NumOfPhilosophers = 5;
@@ -47,5 +48,15 @@ public class Main
 		{
 			philosophers[threadIndex].start();
 		}
+		try
+		{
+			for (int threadIndex = 0; threadIndex < NumOfPhilosophers; threadIndex++)
+				philosophers[threadIndex].join();			
+		}catch(InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
+
+		long end = System.nanoTime()-start;
+		System.out.println( NumOfPhilosophers + " phylosophers took  "+ end + " nano seconds");
 	}
 }
